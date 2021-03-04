@@ -15,6 +15,10 @@ const tasksRoute = require("./routes/task");
 
 app.use("/api/tasks", tasksRoute);
 
+app.get("/helloworld", (req, res) => {
+    res.send("Hello World!")
+})
+
 
 
 app.listen(port, () => {
